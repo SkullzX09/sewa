@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Fugaz One' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/82109a0ba4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>About Us</title>
+    <style>
+        /* CSS styles for the website */
+        body {
+            font-family: 'Fugaz One';
+            margin: 0;
+            padding: 0;
+            background-image: url("./01.jpg");
+        }
+        
+        header {
+            background-color: #1A5D1A;
+            color: #fff;
+            padding: 20px;
+            
+        }
+        
+        #nav {
+    width:100%;
+    display:block;
+    background-color:#1A5D1A;
+    border-bottom:5px solid #1A5D1A;
+    }
+#nav ul {
+    padding:0;
+    margin:0;
+    list-style: none;
+    position: relative;
+    }
+#nav ul:After {
+    content: "";
+    display:block;
+    clear:both;
+    }     
+#nav ul li {
+    display:list-item;
+    list-style: none;
+    float:left;
+    background-color:#1A5D1A;
+    }
+ #nav ul li i {
+     font-size:25px;
+     width:30px;
+     } 
+#nav ul li a {
+    display:block;
+    padding:15px 30px;  
+    color:#FFF;
+    font-size:20px;
+    text-decoration:none;
+    font-family: 'Bree Serif', 'serif';
+    text-align:center;
+}
+
+/* The Dropdown Styles */
+/* =================== */
+/* Hide Dropdowns by Default */
+#nav ul ul {
+    display: none;
+    position: absolute; top: 79px;
+}
+/* Display Dropdowns on Hover */
+#nav ul li:hover > ul {
+    display:list-item;
+}
+/* Fisrt Tier Dropdown */
+#nav ul ul li {
+    width:200px;
+    float:none;
+    position: relative;
+    border-bottom:none;
+}
+#nav ul ul li i {
+    margin-right:10px;
+    }
+#nav ul ul li a {
+    padding:15px 20px;
+    text-align:left;
+    }
+/* Second, Third and more Tiers */
+nav ul ul ul li {
+    position: absolute relative;
+    top:-79px;
+    left:200px;
+}
+
+#nav li > a:after { content: ' »'; }
+#nav > li > a:after {content: ' »'; }
+#nav li > a:only-child:after {content: ''; }
+
+#nav ul .active {
+    color:#1A5D1A;
+}
+        
+        .intro-section h1 {
+            font-size: 36px;
+            color: #1A5D1A;
+           
+        }
+        
+        .intro-section p {
+            font-size: 18px;
+            color: #666;
+            
+        }
+        
+      
+
+      .footer {
+            background-color: #1A5D1A;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   
+    <header>
+        <nav id="nav">
+            <ul>
+             <li><a href="#"><i class="fa-solid fa-bars"></i><Br/>Menu</a>
+                 <ul>
+                     <li><a href="./index.html"><i class="fa fa-home fa-2x"></i>Home</a></li>
+                     <li><a href="./about us.html"><i class="fa fa-user fa-2x"></i>About Us</a></li>
+                   <li><a href="#"><i class="fa fa-book fa-2x"></i>Our Progress</a>
+                           <ul>
+                           <li><a href="#"><i class="fa-brands fa-blogger-b"></i>Blogs</a></li>
+                           <li><a href="#"><i class="fa-solid fa-leaf"></i>About ECIS</a></li>
+                           
+                        </ul>
+                   </li>
+                   <li><a href="./reg2.html"><i class="fa-solid fa-registered"></i>Register Now</a></li>
+                   <li><a href="#"><i class="fa fa-paint-brush fa-1x"></i>Contact Us</a>
+                           <ul>
+                           <li><a href="#"><i class="fa fa-twitter fa-1x"></i>Twitter</a></li>
+                           <li><a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                           
+                        </ul>
+                   </li>
+                </ul>
+            </li>
+            </ul>
+           </nav>
+    </header>
+
+  <section>
+    <h2 style="color: #99B080;"> Our Vision</h2>
+    <p style="color: bisque;">"To cultivate a sustainable and thriving global ecosystem by championing innovative solutions, fostering environmental stewardship, and empowering communities to embrace green practices, ensuring a harmonious coexistence between humanity and nature."
+    </p>
+  </section>
+
+  <section>
+    <h2 style="color: #99B080;">Our Mission</h2>
+    <p style="color: bisque;">Green Force Initiatives is dedicated to leading the charge towards a greener future. Our mission is to implement strategic initiatives that reduce carbon footprint, conserve biodiversity, promote renewable energy, and instill a culture of environmental responsibility. Through education, advocacy, and collaborative partnerships, we strive to inspire individuals, businesses, and governments to adopt eco-friendly practices, paving the way for a more resilient and balanced planet for current and future generations.</p>
+  </section>
+
+  <section>
+    <h2 style="color: #99B080;">Inspiration behind the making of GreenForceInitiatives</h2>
+    <p style="color: bisque;">
+        The inspiration behind creating Green Force Initiatives lies in a deep concern for environmental well-being, a passion for sustainability, a commitment to positive global impact, a focus on innovative solutions, and a vision of empowering communities for long-term environmental stewardship.</p>
+
+  </section>
+<section>
+    <h2 style="color: #BE3144;">Click on the button below to know more about our team!</h3>
+  <button onclick="window.location.href='#about-ecoinsight'">Learn More</button>
+  </section>
+
+ <footer class="footer">
+        &copy; 2024 GreenForceInitiatives. All rights reserved.
+    </footer>
+</body>
+</html>
+
